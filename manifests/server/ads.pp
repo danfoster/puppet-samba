@@ -39,7 +39,6 @@ class samba::server::ads($ensure = present,
   }
 
   package{
-    $krb5_user_package: ensure => installed;
     $winbind_package:   ensure => installed;
     'expect':           ensure => installed;
   }
